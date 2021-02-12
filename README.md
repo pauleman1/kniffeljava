@@ -1,4 +1,4 @@
-# kniffeljava
+# Kiffelanwendung via JavaFx und REST
 
 Superkniffel von Profientwicklern. 
 
