@@ -1,0 +1,10 @@
+bin/
+.metadata
+*.class
+
+# ignore all files ending with ~
+*~ 
+
+.gradle/
+.idea/
+**/build/
