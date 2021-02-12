@@ -1,2 +1,0 @@
-de/azubi/spiele/rest/basic/KommunikationsRestService.java
- de.azubi.spiele.rest.basic.KommunikationsRestService

@@ -1,2 +1,0 @@
-de/azubi/spiele/gui/fx/Starter.java
- de.azubi.spiele.gui.fx.Starter

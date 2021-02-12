@@ -1,6 +1,0 @@
-// TODO ändern
-rootProject.name = 'kniffel'
-include 'core'
-include 'gui'
-include 'server'
-
