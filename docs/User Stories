@@ -1,0 +1,46 @@
+			User Stories Kniffel Applikation
+
+Accounts:
+Nutzer:
+	Ich will einen Account  anlegen können
+	Ich will meinen Account ändern können
+	Ich will meinen Account löschen können
+Admin:
+	Admin will einen Account  anlegen können
+	Admin will meinen Account ändern können
+	Admin will meinen Account löschen können
+	Admin will alle Accounts einsehen können
+
+Spiel - Startmenü :
+	Ich möchte mich in meinen Account einloggen können
+	Ich möchte mich aus meinem Account ausloggen können
+	Ich möchte den Einzelspielermodus auswählen können
+	Ich möchte den Mehrspielermodus auswählen können
+	Ich möchte die Anzahl der Spieler festlegen können (2-5)
+	Ich möchte alle Spieler mit Namen eintragen können
+	Ich möchte das Spiel starten können
+	Ich möchte das Spiel beenden können
+	Mir sollen die Highscores angezeigt werden können
+
+Spiel – Kniffel – Einzelspieler:
+	Mir soll mein Name angezeigt werden
+	Ich will würfeln können
+	Ich will die Würfel auswählen können
+	Ich will mein Ergebnis in die Tabelle eintragen können
+	Ich möchte ins Startmenü wechseln können
+	Mir sollen die verbleibenden Versuche angezeigt werden
+	Ich soll nur auf die vorgegeben Felder/Buttons klicken können
+	Mein Zwischenstand soll mir immer angezeigt werden
+	Alle möglichen Ergebnisse sollen in der Tabelle vorm Eintragen angezeigt werden
+
+
+Spiel – Kniffel – Mehrspieler:
+	Ich will die Namen aller Spieler und ihre Zwischenstände sehen
+	Ich will würfeln können
+	Ich will die Würfel auswählen können
+	Ich will mein Ergebnis in die Tabelle eintragen können
+	Ich möchte ins Startmenü wechseln können
+	Mir sollen die verbleibenden Versuche angezeigt werden
+	Ich soll nur auf die vorgegeben Felder/Buttons klicken können
+	Mein Zwischenstand soll mir immer angezeigt werden
+	Alle möglichen Ergebnisse sollen in der Tabelle vorm Eintragen angezeigt werden
