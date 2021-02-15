@@ -24,7 +24,7 @@ jlink {
 
 application {
     mainModule = 'de.azubi.kniffel'
-    mainClass = 'de.azubi.kniffel.gui.fx.Starter'
+    mainClass = 'de.azubi.kniffel.gui.fx.Main'
     dependencies {
         implementation project(":core")
         implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.4'
