@@ -1,0 +1,41 @@
+WorkFlow
+=========
+
+1. Branch-Protection
+--------------------
+Settings - Branches - Add rule
+	- Branch name pattern: main
+	- require pull request reviews before merging
+	- 2 Reviewer
+
+2. Aufgaben werden als Issue erfasst.
+--------------------------------------
+	Namen beginnt mit einer forlaufenden Nummer
+	Aufgabe wird einem Bearbeiter zugewiesen (Assignees)
+
+3. Wenn eine Aufgabe bearbeitet wird,
+--------------------------------------
+	- wird aus dem main-Branch ein Feature-Branch erstellt
+	- Der Feature-Branch bekommt den Namen "feature/"+<nummer>-<name der Issue>
+
+4. Wenn Die Aufgabe	fertig ist
+------------------------------
+	- wird ein PullRequest (PR) vom Feature-Branch zum main-Branch erstellt
+	- Als Reviewer werde ich und der Teamleiter eingetragen.
+	- Sofern der Quelltext vom Teamleiter kommt kann er einen Vertreter bestimmen
+
+5. 	Erst wenn der PR genehmigt und gemerged ist
+------------------------------------------------
+	- wird der Issue geschlossen.
+	- der Feature-Branch gelöscht
+
+Job des Team-/Projektleiters:
+-----------------------------
+1. Teammitglieder unterstützen
+2. Dafür Sorgen, das die Teammitglieder zu tun haben
+3. Dafür Sorgen dass die administrativen Vorgaben (s.o.) erfüllt sind
+4. wenn noch Zeit ist: selbst entwickeln
+
+
+
+
