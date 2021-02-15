@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fc754e6-ab3e-4b9d-97d7-b735035c04a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gui/src/main/java/de/azubi/kniffel/gui/fx/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.shelf/Uncommitted_changes_before_Update_at_12_02_2021_13_40__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.shelf/Uncommitted_changes_before_Update_at_12_02_2021_13_40__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/src/main/java/de/azubi/kniffel/gui/fx/Starter.java" beforeDir="false" />
+    <list default="true" id="2fc754e6-ab3e-4b9d-97d7-b735035c04a3" name="Default Changelist" comment="#4 solved">
+      <change afterPath="$PROJECT_DIR$/gui/src/main/java/de/azubi/kniffel/gui/fx/game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui/src/main/resources/Menu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/gui/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kniffel.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/kniffel.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kniffel.iws" beforeDir="false" afterPath="$PROJECT_DIR$/kniffel.iws" afterDir="false" />
     </list>
@@ -26,7 +26,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="kniffel" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -36,6 +41,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -43,7 +49,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="feature/4-Grundgerüst-aufbauen-Main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -138,6 +144,14 @@
       <option name="presentableId" value="Default" />
       <updated>1613379283156</updated>
     </task>
+    <task id="LOCAL-00001" summary="#4 solved">
+      <created>1613380177954</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1613380177954</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -151,6 +165,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="#4 solved" />
+    <option name="LAST_COMMIT_MESSAGE" value="#4 solved" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

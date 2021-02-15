@@ -13,6 +13,13 @@
     <option name="SKIP_IMPORT_STATEMENTS" value="false" />
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="GithubSharedProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="main" />
+      </list>
+    </option>
+  </component>
   <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
