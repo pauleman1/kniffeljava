@@ -1,5 +1,15 @@
 # Kiffelanwendung via JavaFx und REST
 
+
+Team: 
+
+Fabian Lechner, 
+Fabian Kasbeitzer, 
+Julian Wonnenberg, 
+Paul Hofmann 
+
+
+
 Superkniffel von Profientwicklern. 
 
 - mit Menu 
