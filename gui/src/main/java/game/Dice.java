@@ -1,7 +1,5 @@
 package game;
 
-import org.jetbrains.annotations.NotNull;
-
 import java.util.Random;
 
 public class Dice implements Comparable<Dice> {
@@ -48,9 +46,8 @@ public class Dice implements Comparable<Dice> {
     }
 
     @Override
-    public int compareTo(@NotNull Dice o)
-
-    {
+    public int compareTo( Dice o) {
+        if (o == null) throw new AssertionError();
         return Integer.compare(value, o.value);
     }
 }
