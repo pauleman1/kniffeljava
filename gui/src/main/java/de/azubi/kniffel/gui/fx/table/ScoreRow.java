@@ -33,6 +33,13 @@ public class ScoreRow {
         } catch (IllegalArgumentException | IllegalAccessException ex) {
             Logger.getLogger(ScoreRow.class.getName()).log(Level.SEVERE, null, ex);
         }
+        for (Object arg : players) {
+            try {
+                fields[i++].set(this, arg);
+            } catch (IllegalArgumentException | IllegalAccessException ex) {
+                Logger.getLogger(ScoreRow.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
     }
 
     public Object getScoreName()
