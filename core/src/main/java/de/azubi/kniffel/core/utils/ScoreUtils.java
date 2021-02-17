@@ -1,6 +1,6 @@
-package utils;
+package de.azubi.kniffel.core.utils;
 
-import game.Dice;
+import de.azubi.kniffel.core.game.Dice;
 
 import java.util.Arrays;
 
