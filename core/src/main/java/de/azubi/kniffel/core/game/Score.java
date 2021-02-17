@@ -1,6 +1,6 @@
-package game;
+package de.azubi.kniffel.core.game;
 
-import static game.ScoreUtils.*;
+import static de.azubi.kniffel.core.utils.ScoreUtils.*;
 
 public class Score {
 
@@ -125,16 +125,3 @@ public class Score {
         return true;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

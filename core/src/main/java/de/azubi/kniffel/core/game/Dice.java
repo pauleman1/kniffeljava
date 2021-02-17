@@ -1,4 +1,4 @@
-package game;
+package de.azubi.kniffel.core.game;
 
 import java.util.Random;
 
