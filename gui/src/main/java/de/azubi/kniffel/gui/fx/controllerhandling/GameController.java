@@ -1,6 +1,8 @@
 package de.azubi.kniffel.gui.fx.controllerhandling;
 
 import com.sun.istack.internal.NotNull;
+import de.azubi.kniffel.core.utils.ScoreUtils;
+import de.azubi.kniffel.gui.fx.table.ScoreRow;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
