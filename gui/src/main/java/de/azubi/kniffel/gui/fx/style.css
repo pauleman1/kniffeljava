@@ -1,0 +1,37 @@
+
+.root {
+  -fx-font-size: 10pt;
+  -fx-font-family: "Roboto";
+  -fx-background-color: #821550;
+
+}
+
+#title {
+  -fx-font: 40pt "Roboto";
+  -fx-font-family: "Roboto";
+  -fx-background-color: linear-gradient(#f2f2f2, #d6d6d6),
+  linear-gradient(#fcfcfc, #d9d9d9, #d6d6d6),
+  linear-gradient(#dddddd, #f6f6f6);
+}
+
+.button {
+  -fx-background-color: linear-gradient(#f2f2f2, #d6d6d6),
+  linear-gradient(#fcfcfc, #d9d9d9, #d6d6d6),
+  linear-gradient(#dddddd, #f6f6f6);
+ -fx-background-insets: 0, 1, 2;
+  -fx-text-fill: black;
+}
+
+.dice {
+  -fx-background-color: linear-gradient(#f2f2f2, #d6d6d6),
+  linear-gradient(#fcfcfc, #d9d9d9, #d6d6d6),
+  linear-gradient(#dddddd, #f6f6f6);
+  -fx-background-insets: 0, 1, 2;
+  -fx-text-fill: black;
+}
+
+.diceArea {
+  -fx-background-color: white;
+  -fx-background-radius: 20px;
+}
+
