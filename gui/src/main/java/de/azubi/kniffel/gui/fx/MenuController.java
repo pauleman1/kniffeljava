@@ -1,6 +1,7 @@
 package de.azubi.kniffel.gui.fx;
 
 
+import de.azubi.kniffel.gui.fx.controllerhandling.GameController;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
