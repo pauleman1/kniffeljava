@@ -1,17 +1,23 @@
-package game;
+package utils;
+
+import game.Dice;
 
 import java.util.Arrays;
 
 public class ScoreUtils {
 
     private static int score;
+    public static String[] tableNames = {
+            "-", "Einser", "Zweier","Dreier","Vierer","Fünfer","Sechser", "Bonus",
+            "Summe oben","Dreierpasch", "Viererpasch", "Full House", "kleine Straße",
+            "Große Straße", "Chance", "Kniffel", "Gesamtpunktzahl", "---------------"
+    };
 
     static public int fullHouse(Dice[] dices) {
         int[] counts = new int[6];
         for (Dice dice : dices) {
             counts[dice.value() - 1]++;
         }
-
         boolean check2 = false;
         boolean check3 = false;
         for (int i : counts) {
@@ -66,7 +72,7 @@ public class ScoreUtils {
         return 0;
     }
 
-    static int sumDices(Dice[] dices) {
+   public static int sumDices(Dice[] dices) {
         score = 0;
         for (Dice dice : dices) {
 
@@ -110,25 +116,7 @@ public class ScoreUtils {
     }
 
     public static String lower(int i) {
-        return switch (i) {
-            case 0 -> "-";
-            case 1 -> "Einser";
-            case 2 -> "Zweier";
-            case 3 -> "Dreier";
-            case 4 -> "Vierer";
-            case 5 -> "Fünfer";
-            case 6 -> "Sechser";
-            case 7 -> "Bonus";
-            case 8 -> "Summe oben";
-            case 9 -> "Dreierpasch";
-            case 10 -> "Viererpasch";
-            case 11 -> "Full House";
-            case 12 -> "kleine Straße";
-            case 13 -> "Große Straße";
-            case 14 -> "Chance";
-            case 15 -> "Kniffel";
-            case 16 -> "Gesamtpunktzahl";
-            default -> "---------------";
-        };
+        return tableNames [i];
     }
+
 }

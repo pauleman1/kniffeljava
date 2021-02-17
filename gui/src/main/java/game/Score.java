@@ -1,6 +1,6 @@
 package game;
 
-import static game.ScoreUtils.*;
+import static utils.ScoreUtils.*;
 
 public class Score {
 
@@ -125,16 +125,3 @@ public class Score {
         return true;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
