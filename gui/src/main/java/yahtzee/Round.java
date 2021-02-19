@@ -3,6 +3,9 @@ package yahtzee;
 import yahtzee.game.Dice;
 import yahtzee.game.Score;
 
+import de.azubi.kniffel.core.game.Dice;
+import de.azubi.kniffel.core.game.Score;
+
 public class Round {
     final Dice[] dices = new Dice[5];
     private final Score[] scoreboards;
