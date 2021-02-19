@@ -1,4 +1,7 @@
-package de.azubi.kniffel.gui.fx;
+package yahtzee;
+
+import yahtzee.game.Dice;
+import yahtzee.game.Score;
 
 import de.azubi.kniffel.core.game.Dice;
 import de.azubi.kniffel.core.game.Score;
