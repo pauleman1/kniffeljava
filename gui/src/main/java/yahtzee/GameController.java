@@ -1,6 +1,5 @@
-package de.azubi.kniffel.gui.fx.controllerhandling;
+package yahtzee;
 
-import com.sun.istack.internal.NotNull;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -14,7 +13,9 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import javafx.util.Callback;
-
+import yahtzee.game.Score;
+import yahtzee.game.ScoreUtils;
+import yahtzee.table.ScoreRow;
 
 import java.io.IOException;
 import java.util.Optional;
@@ -38,6 +39,7 @@ public class GameController {
     public Label title;
     public Label helpLabel;
     private int MAX_PLAYERS;
+    public static int gewurfeltCounter;
 
     @FXML
     private Label scoreLabel;
@@ -90,12 +92,12 @@ public class GameController {
         hideHelpPanel();
         this.gfx = new GameEngine(MAX_PLAYERS);
 
-        img[0] = new Image("images/Wuerfelaugen1.png");
-        img[1] = new Image("images/Wuerfelaugen2.png");
-        img[2] = new Image("images/Wuerfelaugen3.png");
-        img[3] = new Image("images/Wuerfelaugen4.png");
-        img[4] = new Image("images/Wuerfelaugen5.png");
-        img[5] = new Image("images/Wuerfelaugen6.png");
+        img[0] = new Image("/Wuerfelaugen1.png");
+        img[1] = new Image("/Wuerfelaugen2.png");
+        img[2] = new Image("/Wuerfelaugen3.png");
+        img[3] = new Image("/Wuerfelaugen4.png");
+        img[4] = new Image("/Wuerfelaugen5.png");
+        img[5] = new Image("/Wuerfelaugen6.png");
 
         updateHelpLabel();
         updateScore();
@@ -184,7 +186,7 @@ public class GameController {
             scoreLabel.setText("Klicke  auf \"Würfeln\" um zu beginnen.");
         } else if (this.gfx.rou.throwsLeft == 0) {
             scoreLabel.setText("Wähle deinen Zug aus, in dem du in die Tabelle klickst.\n"
-                    + "               Alle Würfe wurden bereis verwendet.");
+            + "               Alle Würfe wurden bereis verwendet.");
 
 
         } else {
@@ -220,6 +222,7 @@ public class GameController {
         this.moveToRolling();
         this.updateHelpLabel();
         this.updateDices();
+        gewurfeltCounter += 1;
         this.updateScore(this.gfx.scoreboardArr, this.gfx.currentPlayer);
         //button deaktivieren , wenn kein Zug mehr übrig ist
         if (this.gfx.rou.throwsLeft == 0) {
@@ -356,7 +359,7 @@ public class GameController {
         }
     }
 
-    public void diceClick(@NotNull MouseEvent mouseEvent) {
+    public void diceClick(MouseEvent mouseEvent) {
         if (this.gfx.rou.throwsLeft == 3 || this.gfx.rou.throwsLeft == 0) {
             //debuggen
             System.out.println("Es wurde noch nicht gewürfelt.");
@@ -461,19 +464,19 @@ public class GameController {
         }
     }
 
-    public void exitToMenu(@NotNull MouseEvent mouseEvent) {
+    public void exitToMenu(MouseEvent mouseEvent) {
         exitToMenu();
     }
 
     private void exitToMenu() {
         try {
             //fxml laden
-            Parent root = FXMLLoader.load(getClass().getResource("Menu.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/Menu.fxml"));
             // zurück zur stage
             Stage app_stage = (Stage) (title.getScene().getWindow());
             // szene hinzufügen + css  + szene setzen
             Scene menu_scene = new Scene(root);
-            menu_scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
+            menu_scene.getStylesheets().add(getClass().getResource("/style.css").toExternalForm());
             app_stage.setScene(menu_scene);
             app_stage.show();
 

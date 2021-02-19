@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.*?>
+<GridPane alignment="TOP_CENTER" hgap="10" styleClass="root" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <padding>
+        <Insets bottom="10" left="25" right="25" top="5" />
+    </padding>
+    <VBox alignment="TOP_CENTER" GridPane.columnSpan="2147483647">
+        <GridPane>
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <Label fx:id="title" text=" Statistiken" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <Label fx:id="lThreeOfAKind" text="Dreierpasch: " GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="10" GridPane.valignment="CENTER" />
+            <Label fx:id="lThreeOfAKindCounter" text="" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="10" GridPane.valignment="CENTER" />
+            <Label fx:id="lFourOfAKind" text="ViererPasch:" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="20" GridPane.valignment="CENTER" />
+            <Label fx:id="lFourOfAKindCounter" text="" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="20" GridPane.valignment="CENTER" />
+            <Label fx:id="lSmallStraight" text="Kleine Straße:" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="30" GridPane.valignment="CENTER" />
+            <Label fx:id="lSmallStraightCounter" text="" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="30" GridPane.valignment="CENTER" />
+            <Label fx:id="lLargeStraight" text="Große Straße:" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="40" GridPane.valignment="CENTER" />
+            <Label fx:id="lLargeStraightCounter" text="" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="40" GridPane.valignment="CENTER" />
+            <Label fx:id="lYahtzee" text="Kniffel:" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="60" GridPane.valignment="CENTER" />
+            <Label fx:id="lYahtzeeCounter" text="" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="60" GridPane.valignment="CENTER" />
+            <Label fx:id="lGewurfelt" text="Gewürfelt:" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="70" GridPane.valignment="CENTER" />
+            <Label fx:id="lGewurfeltCounter" text="" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="70" GridPane.valignment="CENTER" />
+            <Label fx:id="lTimer" text="Spielzeit:" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="80" GridPane.valignment="CENTER" />
+            <Label fx:id="lTimerCounter" text="" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="80" GridPane.valignment="CENTER" />
+            <Button alignment="CENTER" mnemonicParsing="false" text="Startseite" GridPane.rowIndex="1" onAction="#exitToMenu">
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            </Button>
+        </GridPane>
+    </VBox>
+    <Button alignment="CENTER" mnemonicParsing="false" text="Statistik zurücksetzten" GridPane.rowIndex="4" GridPane.columnIndex="3" minWidth="180" fx:id="resetStats" onAction="#resetStats">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+
+
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints maxWidth="750.0" minWidth="300.0" prefWidth="400.0" />
+        <ColumnConstraints />
+        <ColumnConstraints minWidth="750.0" prefWidth="400.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+    </rowConstraints>
+</GridPane>

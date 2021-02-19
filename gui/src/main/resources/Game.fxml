@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.collections.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.*?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
-
 <GridPane alignment="center" hgap="10" styleClass="root" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
     <padding>
         <Insets bottom="10" left="25" right="25" top="5" />
@@ -63,31 +62,31 @@
             <cursor>
                 <Cursor fx:constant="HAND" />
             </cursor>
-            <Image url="@../resources/Wuerfelaugen1.png" />
+            <Image url="/Wuerfelaugen1.png" />
         </ImageView>
         <ImageView fx:id="dice2" fitHeight="40.0" fitWidth="40.0" layoutX="400.0" layoutY="22.0" onMouseClicked="#diceClick" pickOnBounds="true" preserveRatio="true" styleClass="dice" GridPane.columnIndex="2" GridPane.rowIndex="1">
             <cursor>
                 <Cursor fx:constant="HAND" />
             </cursor>
-            <Image url="@../resources/Wuerfelaugen2.png" />
+            <Image url="/Wuerfelaugen2.png" />
         </ImageView>
         <ImageView fx:id="dice3" fitHeight="40.0" fitWidth="40.0" layoutX="400.0" layoutY="22.0" onMouseClicked="#diceClick" pickOnBounds="true" preserveRatio="true" styleClass="dice" GridPane.columnIndex="3" GridPane.rowIndex="1">
             <cursor>
                 <Cursor fx:constant="HAND" />
             </cursor>
-            <Image url="@../resources/Wuerfelaugen3.png" />
+            <Image url="/Wuerfelaugen3.png" />
         </ImageView>
         <ImageView fx:id="dice4" fitHeight="40.0" fitWidth="40.0" layoutX="400.0" layoutY="22.0" onMouseClicked="#diceClick" pickOnBounds="true" preserveRatio="true" styleClass="dice" GridPane.columnIndex="4" GridPane.rowIndex="1">
             <cursor>
                 <Cursor fx:constant="HAND" />
             </cursor>
-            <Image url="@../resources/Wuerfelaugen4.png" />
+            <Image url="/Wuerfelaugen4.png" />
         </ImageView>
         <ImageView fx:id="dice5" fitHeight="40.0" fitWidth="40.0" layoutX="400.0" layoutY="22.0" onMouseClicked="#diceClick" pickOnBounds="true" preserveRatio="true" styleClass="dice" GridPane.columnIndex="5" GridPane.rowIndex="1">
             <cursor>
                 <Cursor fx:constant="HAND" />
             </cursor>
-            <Image url="@../resources/Wuerfelaugen5.png" />
+            <Image url="/Wuerfelaugen5.png" />
         </ImageView>
         <columnConstraints>
             <ColumnConstraints />
@@ -164,4 +163,3 @@
         <RowConstraints minHeight="10.0" prefHeight="30.0" />
     </rowConstraints>
 </GridPane>
-

@@ -1,11 +1,11 @@
-package de.azubi.kniffel.gui.fx.table;
+package yahtzee.table;
 
 import java.lang.reflect.Field;
-import java.util.Objects;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class ScoreRow {
+
     private Object scoreName;
     private Object player1;
     private Object player2;
@@ -13,7 +13,8 @@ public class ScoreRow {
     private Object player4;
     private Object player5;
 
-    public ScoreRow(Object... args){
+
+    public ScoreRow(Object... args) {
         Field[] fields = getClass().getDeclaredFields();
         int i = 0;
         for (Object arg : args) {
@@ -25,7 +26,7 @@ public class ScoreRow {
         }
     }
 
-    public ScoreRow(Object scoreName, Object[] players){
+    public ScoreRow(Object scoreName, Object[] players) {
         Field[] fields = getClass().getDeclaredFields();
         int i = 0;
         try {
@@ -41,6 +42,7 @@ public class ScoreRow {
             }
         }
     }
+
 
     public Object getScoreName()
 
@@ -79,4 +81,3 @@ public class ScoreRow {
         return player5;
     }
 }
-

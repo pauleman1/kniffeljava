@@ -1,0 +1,22 @@
+/*noinspection ALL,CssUnusedSymbol*/
+.root {
+  -fx-font-size: 30pt;
+  -fx-font-family: "Roboto";
+
+}
+
+#title {
+  -fx-font: 40pt "Roboto";
+  -fx-font-family: "Roboto";
+
+}
+
+#resetStats {
+ -fx-font: 20pt "Roboto";
+}
+
+.button {
+  -fx-font-size: 10pt;
+  -fx-text-fill: black;
+}
+

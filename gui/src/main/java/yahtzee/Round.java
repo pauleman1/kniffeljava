@@ -1,4 +1,7 @@
-package de.azubi.kniffel.gui.fx;
+package yahtzee;
+
+import yahtzee.game.Dice;
+import yahtzee.game.Score;
 
 public class Round {
     final Dice[] dices = new Dice[5];
