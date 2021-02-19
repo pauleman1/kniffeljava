@@ -18,7 +18,7 @@
             <Label fx:id="title" text=" Statistiken" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
             <Label fx:id="lThreeOfAKind" text="Dreierpasch: " GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="10" GridPane.valignment="CENTER" />
             <Label fx:id="lThreeOfAKindCounter" text="" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="10" GridPane.valignment="CENTER" />
-            <Label fx:id="lFourOfAKind" text="ViererPasch:" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="20" GridPane.valignment="CENTER" />
+            <Label fx:id="lFourOfAKind" text="Viererpasch:" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="20" GridPane.valignment="CENTER" />
             <Label fx:id="lFourOfAKindCounter" text="" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="20" GridPane.valignment="CENTER" />
             <Label fx:id="lSmallStraight" text="Kleine Straße:" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="30" GridPane.valignment="CENTER" />
             <Label fx:id="lSmallStraightCounter" text="" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="30" GridPane.valignment="CENTER" />
