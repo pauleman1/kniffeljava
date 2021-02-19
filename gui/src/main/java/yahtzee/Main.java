@@ -21,6 +21,7 @@ public class Main extends Application {
         primaryStage.setMinWidth(1000);
         Parent root = FXMLLoader.load(getClass().getResource("/Menu.fxml"));
 
+
         Scene scene = new Scene(root, 1000, 1000);
         scene.getStylesheets().add(getClass().getResource("/style.css").toExternalForm());
         primaryStage.setScene(scene);

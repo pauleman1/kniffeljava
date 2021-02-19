@@ -1,12 +1,14 @@
 package de.azubi.kniffel.core.game;
 
-public class GameEngine {
-    private static int MAX_PLAYERS;
-    final Round rou;
-    Score[] scoreboardArr;
-    int currentPlayer = 0;
+import de.azubi.kniffel.core.game.Score;
 
-    GameEngine(int playerNumber) {
+public class GameEngine {
+    public static int MAX_PLAYERS;
+    public final Round rou;
+    public Score[] scoreboardArr;
+    public int currentPlayer = 0;
+
+    public GameEngine(int playerNumber) {
         MAX_PLAYERS = playerNumber;
         scoreboardArr = new Score[MAX_PLAYERS];
 
@@ -31,7 +33,7 @@ public class GameEngine {
             this.rou.dices[dice].setKeeper(false);
         }
     }
-    // score updaten nach jedem wurf
+// score updaten nach jedem wurf
     public void reRoll() {
         if (this.rou.throwsLeft > 0) {
             this.rou.throwsLeft--;
@@ -42,7 +44,7 @@ public class GameEngine {
         }
     }
 
-    // score speichern
+// score speichern
     public boolean scoreSelect(int row) {
         if (this.rou.throwsLeft != 3) {
             boolean result = this.rou.scoreSelectCheck(row);
@@ -57,10 +59,10 @@ public class GameEngine {
         return false;
     }
 
-    // ist das spiel vorbei?
+// ist das spiel vorbei?
     public boolean isGameOver() {
         for (Score scoreboard : this.scoreboardArr) {
-            if (!scoreboard.isFull()) {
+            if (!scoreboard.isScoreboardFull()) {
                 return false;
             }
         }
@@ -80,7 +82,7 @@ public class GameEngine {
         }
     }
 
-    // spieler der gewonnen hat zur+ck geben, unentschieden dann 0
+// spieler der gewonnen hat zur+ck geben, unentschieden dann 0
     public int getWinner() {
         if (this.isGameOver()) {
             int maxScore = 0;
@@ -98,3 +100,6 @@ public class GameEngine {
         return -1;
     }
 }
+
+
+

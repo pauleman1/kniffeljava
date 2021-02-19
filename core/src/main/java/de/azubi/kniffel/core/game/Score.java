@@ -124,4 +124,8 @@ public class Score {
         }
         return true;
     }
+
+    public void printScore() {
+        for (int i = 0; i <17; i++);
+    }
 }
