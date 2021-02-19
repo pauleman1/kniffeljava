@@ -73,6 +73,12 @@ public class StatController {
     }
 
     public void resetStats(ActionEvent actionEvent) {
+        ScoreUtils.threeOfAKindCounter = 0;
+        ScoreUtils.fourOfAKindCounter = 0;
+        ScoreUtils.smallStraightCounter = 0;
+        ScoreUtils.largeStraightCounter = 0;
+        ScoreUtils.yahtzeeCounter = 0;
+        GameController.gewurfeltCounter = 0;
         threeOfAKind = 0;
         fourOfAKind = 0;
         smallStraight = 0;
