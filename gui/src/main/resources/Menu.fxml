@@ -17,14 +17,15 @@
 
     <VBox alignment="CENTER" spacing="5"  GridPane.columnIndex="1" GridPane.columnSpan="1" GridPane.rowIndex="3">
 
-        <Button fx:id="singlePlayerButton" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" minHeight="50" minWidth="50"
+        <Label ></Label>
+        <Button fx:id="singlePlayerButton" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" prefHeight="50" prefWidth="150"
                 onAction="#singlePlayer" styleClass="button" text="Einzelspieler">
             <cursor>
                 <Cursor fx:constant="HAND"/>
             </cursor>
         </Button>
 
-        <Button fx:id="multiPlayerButton" onAction="#multiPlayer" styleClass="button" text="Multiplayer" minHeight="50" minWidth="50" >
+        <Button fx:id="multiPlayerButton" onAction="#multiPlayer" styleClass="button" text="Multiplayer" prefHeight="50" prefWidth="150" >
             <cursor>
                 <Cursor fx:constant="HAND"/>
             </cursor>
@@ -36,7 +37,7 @@
                 <Cursor fx:constant="HAND"/>
             </cursor>
         </Button>
-        <Button fx:id="statistikbutton" onAction="#stats" styleClass="button" text="Statistik" minHeight="50" minWidth="50" >
+        <Button fx:id="statistikbutton" onAction="#stats" styleClass="button" text="Statistik" prefHeight="50" prefWidth="150" >
             <cursor>
                 <Cursor fx:constant="HAND"/>
             </cursor>

@@ -1,13 +1,13 @@
 package yahtzee;
 
 
+import de.azubi.kniffel.core.utils.ScoreUtils;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
-import yahtzee.game.ScoreUtils;
 
 import java.io.IOException;
 
@@ -45,14 +45,14 @@ public class StatController {
         largeStraight = ScoreUtils.largeStraightCounter;
         yahtzee = ScoreUtils.yahtzeeCounter;
         gewurfelt = GameController.gewurfeltCounter;
-        timediff =Math.rint(MenuController.timerDiff);
+        timediff =MenuController.timerDiff;
         lThreeOfAKindCounter.setText(String.valueOf(threeOfAKind)+"x");
         lFourOfAKindCounter.setText(String.valueOf(fourOfAKind)+"x");
         lSmallStraightCounter.setText(String.valueOf(smallStraight)+"x");
         lLargeStraightCounter.setText(String.valueOf(largeStraight)+"x");
         lYahtzeeCounter.setText(String.valueOf(yahtzee)+"x");
         lGewurfeltCounter.setText(String.valueOf(gewurfelt)+"x");
-        lTimerCounter.setText(String.valueOf(timediff)+"s");
+        lTimerCounter.setText(String.valueOf(MenuController.timerDiff)+"s");
     }
 
     public void exitToMenu(ActionEvent actionEvent) {

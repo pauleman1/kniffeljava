@@ -2,6 +2,7 @@
 .root {
   -fx-font-size: 30pt;
   -fx-font-family: "Roboto";
+  -fx-background-color: #818181;
 
 }
 

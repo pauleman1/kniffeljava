@@ -5,11 +5,15 @@ import de.azubi.kniffel.core.game.Dice;
 import java.util.Arrays;
 
 public class ScoreUtils {
-
     private static int score;
+    public static int yahtzeeCounter = 0;
+    public static int smallStraightCounter = 0;
+    public static int largeStraightCounter = 0;
+    public static int threeOfAKindCounter = 0;
+    public static int fourOfAKindCounter = 0;
     public static String[] tableNames = {
-            "-", "Einser", "Zweier","Dreier","Vierer","Fünfer","Sechser", "Bonus",
-            "Summe oben","Dreierpasch", "Viererpasch", "Full House", "kleine Straße",
+            "-", "Einser", "Zweier", "Dreier", "Vierer", "Fünfer", "Sechser", "Bonus",
+            "Summe oben", "Dreierpasch", "Viererpasch", "Full House", "kleine Straße",
             "Große Straße", "Chance", "Kniffel", "Gesamtpunktzahl", "---------------"
     };
 
@@ -44,6 +48,7 @@ public class ScoreUtils {
                 counter = 0;
             }
             if (counter == 3) {
+                smallStraightCounter += 1;
                 return 30;
             }
         }
@@ -66,13 +71,14 @@ public class ScoreUtils {
                 counter = 0;
             }
             if (counter == 4) {
+                largeStraightCounter += 1;
                 return 40;
             }
         }
         return 0;
     }
 
-   public static int sumDices(Dice[] dices) {
+    public static int sumDices(Dice[] dices) {
         score = 0;
         for (Dice dice : dices) {
 
@@ -89,6 +95,7 @@ public class ScoreUtils {
         if ((sortedDices[0].value() == sortedDices[1].value() && sortedDices[1].value() == sortedDices[2].value()) ||
                 (sortedDices[1].value() == sortedDices[2].value() && sortedDices[2].value() == sortedDices[3].value()) ||
                 (sortedDices[2].value() == sortedDices[3].value() && sortedDices[3].value() == sortedDices[4].value())) {
+            threeOfAKindCounter += 1;
             return sumDices(dices);
         } else {
             return 0;
@@ -100,9 +107,12 @@ public class ScoreUtils {
         sortedDices = dices.clone();
         Arrays.sort(sortedDices);
 
-        if ((sortedDices[0].value() == sortedDices[3].value()) || (sortedDices[1].value() == sortedDices[4].value()))
+        if ((sortedDices[0].value() == sortedDices[3].value()) || (sortedDices[1].value() == sortedDices[4].value())) {
+            fourOfAKindCounter += 1;
             return sumDices(dices);
-        return 0;
+        } else {
+            return 0;
+        }
     }
 
     public static int yahtzee(Dice[] dices) {
@@ -110,6 +120,7 @@ public class ScoreUtils {
                 && dices[1].value() == dices[2].value()
                 && dices[2].value() == dices[3].value()
                 && dices[3].value() == dices[4].value()) {
+            yahtzeeCounter += 1;
             return 50;
         } else
             return 0;

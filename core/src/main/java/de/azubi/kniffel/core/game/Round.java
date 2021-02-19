@@ -1,15 +1,14 @@
-package yahtzee;
+package de.azubi.kniffel.core.game;
 
-import yahtzee.game.Dice;
-import yahtzee.game.Score;
+
 
 import de.azubi.kniffel.core.game.Dice;
 import de.azubi.kniffel.core.game.Score;
 
 public class Round {
-    final Dice[] dices = new Dice[5];
+    public final Dice[] dices = new Dice[5];
     private final Score[] scoreboards;
-    int throwsLeft;
+    public int throwsLeft;
     private int currentPlayer;
 
 
@@ -31,7 +30,7 @@ public class Round {
         }
     }
 
-    void toggleKeeperSolo(int keep)
+    public void toggleKeeperSolo(int keep)
     {
         this.dices[keep - 1].toggleKeeper();
     }
